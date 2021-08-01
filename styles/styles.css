@@ -1,0 +1,123 @@
+:root {
+  --red: #e50914;
+  --black: #141414;
+  --white: #fefefe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: var(--black);
+}
+
+/*  Header */
+
+header .container {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0.5rem 2rem;
+}
+
+header .container nav a {
+  text-decoration: none;
+  color: var(--white);
+
+  transition: filter 0.2s;
+}
+
+header .container nav a:hover {
+  filter: brightness(0.5);
+}
+
+header .container nav a + a {
+  margin-left: 0.5rem;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--white);
+}
+.logo .flix {
+  color: var(--red);
+}
+
+/*  Main Card */
+
+.filme-principal {
+  font-size: 1rem;
+
+  background: linear-gradient(
+      to right top,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url("../assets/capa-house.jpg");
+  background-size: cover;
+  background-position-y: 10%;
+
+  height: 400px;
+
+  padding-left: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .descricao {
+  color: var(--white);
+
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+
+  max-width: 380px;
+}
+
+.titulo {
+  font-size: 2.5rem;
+
+  color: var(--white);
+}
+
+.btn {
+  width: 8rem;
+  height: 2rem;
+
+  border: 0;
+  border-radius: 0.25rem;
+
+  background: var(--white);
+  color: var(--black);
+  font-family: "Roboto", sans-serif;
+
+  cursor: pointer;
+
+  transition: filter 0.2s;
+}
+
+.btn i {
+  margin-right: 0.6rem;
+}
+
+.btn:nth-child(1) {
+  color: var(--white);
+  background: var(--red);
+}
+
+.btn:hover {
+  filter: brightness(0.85);
+}
+
+.btn + button {
+  margin-left: 1rem;
+}

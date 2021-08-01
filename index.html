@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>ScaryFlix</title>
   </head>
   <body>
-    <script src="script.js"></script>
+    <header>
+      <div class="container">
+        <h2 class="logo">Scary<span class="flix">Flix</span></h2>
+        <nav>
+          <a href="#">Início</a>
+          <a href="#">Séries</a>
+          <a href="#">Filmes</a>
+          <a href="#">Documentários</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="filme-principal">
+        <div class="container">
+          <h3 class="titulo">House of Cards</h3>
+          <p class="descricao">
+            House of Cards is an American political thriller streaming
+            television series created by Beau Willimon. It is an adaptation of
+            the 1990 BBC series of the same name and based on the 1989 novel of
+            the same name by Michael Dobbs.
+          </p>
+          <div class="btns">
+            <button role="button" class="btn">
+              <i class="fas fa-play"></i>Watch now
+            </button>
+            <button role="button" class="btn">
+              <i class="fas fa-info"></i> More info
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/710ee36645.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./styles/script.js"></script>
   </body>
 </html>
