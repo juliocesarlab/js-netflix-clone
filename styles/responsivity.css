@@ -1,0 +1,33 @@
+@media screen and (max-width: 800px) {
+  header .header-container i {
+    color: white;
+    cursor: pointer;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .changeFlexFlow {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hamburguer {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .showMenu {
+    display: flex;
+  }
+
+  .filme-principal {
+    background-size: cover;
+    height: 400px;
+  }
+  .filme-principal .descricao {
+    font-size: 1rem;
+    max-width: 350px;
+  }
+}

@@ -17,7 +17,7 @@ body {
 
 /*  Header */
 
-header .container {
+header .header-container {
   display: flex;
 
   justify-content: space-between;
@@ -26,18 +26,18 @@ header .container {
   padding: 0.5rem 2rem;
 }
 
-header .container nav a {
+header .header-container nav a {
   text-decoration: none;
   color: var(--white);
 
   transition: filter 0.2s;
 }
 
-header .container nav a:hover {
+header .header-container nav a:hover {
   filter: brightness(0.5);
 }
 
-header .container nav a + a {
+header .header-container nav a + a {
   margin-left: 0.5rem;
 }
 
@@ -64,7 +64,7 @@ header .container nav a + a {
   background-size: cover;
   background-position-y: 10%;
 
-  height: 400px;
+  height: 550px;
 
   padding-left: 2rem;
 
@@ -75,12 +75,13 @@ header .container nav a + a {
 }
 
 .filme-principal .descricao {
+  font-size: 1.2rem;
   color: var(--white);
 
   margin-bottom: 2rem;
   margin-top: 1rem;
 
-  max-width: 380px;
+  max-width: 500px;
 }
 
 .titulo {
@@ -120,4 +121,18 @@ header .container nav a + a {
 
 .btn + button {
   margin-left: 1rem;
+}
+
+.movie-box {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.carrossel-filmes {
+  margin-top: 1rem;
+}
+
+.hamburguer {
+  display: none;
 }
