@@ -5,3 +5,8 @@ const showMenu = () => {
   header.classList.toggle('changeFlexFlow')
   menu.classList.toggle('showMenu')
 }
+
+window.addEventListener('scroll', () => {
+  let header = document.querySelector('.header');
+  header.classList.add('background')
+})
